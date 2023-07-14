@@ -3,6 +3,7 @@ var readlineSync = require("readline-sync");
 var score = 0;
 
 var questions = [
+    
     {
         question: "Where do I live? ",
         answer: "Delhi"
@@ -36,6 +37,10 @@ var highScores = [
     },
     {
         name: "Rishabh",
+        score: "4"
+    },
+    {
+        name: "Piyush",
         score: "4"
     }
 ]
