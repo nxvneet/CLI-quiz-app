@@ -9,15 +9,15 @@ var questions = [
         answer: "Delhi"
     },
     {
-        question: "What's my favourite club ",
+        question: "What's my favourite club? ",
         answer: "Manchester United"
     },
     {
-        question: "Who's my favourite player ",
+        question: "Who's my favourite player? ",
         answer: "Cristiano Ronaldo"
     },
     {
-        question:"What's my favourite colour ",
+        question:"What's my favourite colour? ",
         answer: "Red"
     },
     {
