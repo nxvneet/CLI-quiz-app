@@ -56,7 +56,7 @@ function play(question, answer){
 
     var correctAnswer = readlineSync.question(question);
 
-    if(correctAnswer === answer){
+    if(correctAnswer.toLowerCase() === answer.toLowerCase()){
         console.log("Right answer!");
         score = score + 1;
     
