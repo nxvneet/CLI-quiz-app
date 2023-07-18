@@ -3,7 +3,7 @@ var readlineSync = require("readline-sync");
 var score = 0;
 
 var questions = [
-    
+
     {
         question: "Where do I live? ",
         answer: "Delhi"
@@ -17,18 +17,17 @@ var questions = [
         answer: "Cristiano Ronaldo"
     },
     {
-        question:"What's my favourite colour? ",
+        question: "What's my favourite colour? ",
         answer: "Red"
     },
     {
-        question:"Tell me my favourite web series? ",
+        question: "Tell me my favourite web series? ",
         answer: "Breaking Bad"
     },
-] 
+]
 
-var highScores = [
-    {
-        name : "Navneet",
+var highScores = [{
+        name: "Navneet",
         score: "5"
     },
     {
@@ -45,25 +44,24 @@ var highScores = [
     }
 ]
 
-function welcome(){
+function welcome() {
 
     var userName = readlineSync.question("Enter your username ");
     console.log("Welcome " + userName + " to DO YOU KNOW Navneet?");
 
 }
 
-function play(question, answer){
+function play(question, answer) {
 
     var correctAnswer = readlineSync.question(question);
 
-    if(correctAnswer.toLowerCase() === answer.toLowerCase()){
+    if (correctAnswer.toLowerCase() === answer.toLowerCase()) {
         console.log("Right answer!");
         score = score + 1;
-    
-    }
-    else{
+
+    } else {
         console.log("Wrong answer!");
-    
+
     }
 
     console.log("Current score: " + score);
@@ -71,25 +69,25 @@ function play(question, answer){
 
 }
 
-function loop(){
+function loop() {
 
-    for(var i= 0 ; i< questions.length ; i++){ 
+    for (var i = 0; i < questions.length; i++) {
 
         var currentQuestion = questions[i];
         play(currentQuestion.question, currentQuestion.answer);
-    
+
     }
 
     console.log("\n" + "YAY! you scored: " + score);
     console.log("Check out the high scores, if you should be there ping me and I'll update it" + "\n");
-    
+
 }
 
 
-function scores(){
-    
-    for(var j= 0; j< highScores.length; j++){
-     
+function scores() {
+
+    for (var j = 0; j < highScores.length; j++) {
+
         var scoreList = highScores[j];
         console.log(scoreList.name, scoreList.score);
     }
