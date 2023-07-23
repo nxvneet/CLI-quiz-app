@@ -24,6 +24,7 @@ var questions = [
         question: "Tell me my favourite web series? ",
         answer: "Breaking Bad"
     },
+
 ]
 
 var highScores = [{
